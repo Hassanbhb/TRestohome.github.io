@@ -34,6 +34,7 @@
     <title>Tresto home</title>
   </head>
   <body class="font-cairo">
+    <!-- header -->
     <header class="bg-white">
       <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
@@ -129,5 +130,42 @@
         </div>
       </div>
     </header>
+    <!-- hero section -->
+    <div class="relative overflow-hidden bg-gray-100 h-[40rem]">
+      <!-- Carousel items -->
+      <div class="slides absolute top-0 left-0 w-full h-full">
+        <!-- First item -->
+        <div
+          class="absolute w-full h-full transition-transform duration-500 "
+        >
+          <p class="font-bold text-5xl absolute">Hello</p>
+          <img
+            src="./assets/resto.jpg"
+            alt="Slide 1"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div
+          class="absolute w-full h-full transition-transform duration-500 -translate-x-full"
+        >
+          <img
+            src="./assets/server.jpg"
+            alt="Slide 1"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <div
+          class="absolute w-full h-full transition-transform duration-500 -translate-x-full"
+        >
+          <img
+            src="./assets/burger.jpg"
+            alt="Slide 1"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+      <!-- Add more carousel items here -->
+    </div>
+    <script src="./index.js"></script>
   </body>
 </html>
