@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -64,7 +64,7 @@
                 <li>
                   <a
                     class="text-gray-500/75 transition hover:text-gray-500"
-                    href="#"
+                    href="#features"
                   >
                     Fonctionnalité
                   </a>
@@ -73,7 +73,7 @@
                 <li>
                   <a
                     class="text-gray-500/75 transition hover:text-gray-500"
-                    href="#"
+                    href="#pricing"
                   >
                     Tarifs
                   </a>
@@ -310,13 +310,13 @@
     </div>
 
     <!-- Fonctionnalities section -->
-    <div>
+    <div id="features">
       <!-- cards -->
       <div class="bg-white py-24 sm:py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
           <div class="mx-auto max-w-2xl lg:mx-0">
             <h2
-              class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+              class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"
             >
               Fonctionnalités
             </h2>
@@ -381,6 +381,318 @@
 
             <!-- More people... -->
           </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- pricing section -->
+    <div id="pricing" class="bg-white py-12 sm:py-24">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div>
+          <h2 class="text-base font-semibold leading-7 text-primary">
+            Tarification
+          </h2>
+          <p
+            class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl"
+          >
+            Avec une garantie de remboursement
+          </p>
+        </div>
+        <p class="mx-auto max-w-2xl lg:mx-0 text-lg mt-6 text-gray-600">
+          Choisissez un plan abordable doté des meilleures fonctionnalités pour
+          engager votre public, fidéliser la clientèle et stimuler les ventes.
+        </p>
+        <div
+          class="isolate mx-auto mt-10 grid max-w-md grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3"
+        >
+          <div class="rounded-3xl p-8 xl:p-10 ring-1 ring-gray-200">
+            <div class="flex items-center justify-between gap-x-4">
+              <h3
+                id="tier-freelancer"
+                class="text-lg font-semibold leading-8 text-gray-900"
+              >
+                Base
+              </h3>
+            </div>
+            <p class="mt-4 text-sm leading-6 text-gray-600">
+              Les éléments essentiels pour fournir le meilleur travail possible
+              aux clients.
+            </p>
+            <p class="mt-6 flex items-baseline gap-x-1">
+              <!-- Price, update based on frequency toggle state -->
+              <span class="text-4xl font-bold tracking-tight text-gray-900"
+                >0 <span class="text-base">MAD</span></span
+              >
+              <!-- Payment frequency, update based on frequency toggle state -->
+              <span class="text-sm font-semibold leading-6 text-gray-600"
+                >/month</span
+              >
+            </p>
+            <a
+              href="#"
+              aria-describedby="tier-freelancer"
+              class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary text-primary ring-1 ring-inset ring-primary hover:ring-primary/50"
+              >Buy plan</a
+            >
+            <ul
+              role="list"
+              class="mt-8 space-y-3 text-sm leading-6 text-gray-600 xl:mt-10"
+            >
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-primary"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Installation gratuitement
+              </li>
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-primary"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Menu online PDF
+              </li>
+            </ul>
+          </div>
+          <div class="rounded-3xl p-8 xl:p-10 ring-2 ring-primary">
+            <div class="flex items-center justify-between gap-x-4">
+              <h3
+                id="tier-startup"
+                class="text-lg font-semibold leading-8 text-primary"
+              >
+                Premium
+              </h3>
+              <p
+                class="rounded-full bg-primary/10 px-2.5 py-1 text-xs font-semibold leading-5 text-primary"
+              >
+                Le Plus Populaire
+              </p>
+            </div>
+            <p class="mt-4 text-sm leading-6 text-gray-600">
+              Support et infrastructure dédiés à votre entreprise.
+            </p>
+            <p class="mt-6 flex items-baseline gap-x-1">
+              <!-- Price, update based on frequency toggle state -->
+              <span class="text-4xl font-bold tracking-tight text-gray-900"
+                >1990 <span class="text-base">MAD</span></span
+              >
+              <!-- Payment frequency, update based on frequency toggle state -->
+              <span class="text-sm font-semibold leading-6 text-gray-600"
+                >/month</span
+              >
+            </p>
+            <a
+              href="#"
+              aria-describedby="tier-startup"
+              class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary bg-primary text-white shadow-sm hover:bg-secondary"
+              >Buy plan</a
+            >
+            <ul
+              role="list"
+              class="mt-8 space-y-3 text-sm leading-6 text-gray-600 xl:mt-10"
+            >
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-primary"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Installation gratuitement
+              </li>
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-primary"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Site web de haute qualité
+              </li>
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-primary"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Domaine et hébergement gratuits à vie
+              </li>
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-primary"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Créer une bannière pour votre projet
+              </li>
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-primary"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Le saisie de vos catégories et produit
+              </li>
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-primary"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Support technique gratuit à vie
+              </li>
+            </ul>
+          </div>
+          <div class="rounded-3xl p-8 xl:p-10 ring-1 ring-gray-200">
+            <div class="flex items-center justify-between gap-x-4">
+              <h3
+                id="tier-enterprise"
+                class="text-lg font-semibold leading-8 text-gray-900"
+              >
+                Pro
+              </h3>
+            </div>
+            <p class="mt-4 text-sm leading-6 text-gray-600">
+              Un plan qui évolue avec la croissance rapide de votre entreprise.
+            </p>
+            <p class="mt-6 flex items-baseline gap-x-1">
+              <!-- Price, update based on frequency toggle state -->
+              <span class="text-4xl font-bold tracking-tight text-gray-900"
+                >799 <span class="text-base">MAD</span></span
+              >
+              <!-- Payment frequency, update based on frequency toggle state -->
+              <span class="text-sm font-semibold leading-6 text-gray-600"
+                >/month</span
+              >
+            </p>
+            <a
+              href="#"
+              aria-describedby="tier-enterprise"
+              class="mt-6 block rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary text-primary ring-1 ring-inset ring-primary hover:ring-primary/50"
+              >Acheter le plan</a
+            >
+            <ul
+              role="list"
+              class="mt-8 space-y-3 text-sm leading-6 text-gray-600 xl:mt-10"
+            >
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-primary"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Installation gratuitement
+              </li>
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-primary"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Site web de haute qualité
+              </li>
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-primary"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Le nom de domaine est à 199 dirhams
+              </li>
+              <li class="flex gap-x-3">
+                <svg
+                  class="h-6 w-5 flex-none text-primary"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+                Support technique gratuit à vie
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
