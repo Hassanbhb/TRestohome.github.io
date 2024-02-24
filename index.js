@@ -1,15 +1,25 @@
-// Get the carousel items
-const carouselItems = document.querySelector('.slides').children;
-// Initialize index for tracking active item
-let currentIndex = 0;
+const mobile_menu_btn = document.querySelector('.mobile_menu_btn');
+const mobile_menu = document.querySelector('.mobile_menu');
+const mobile_menu_nav = document.querySelector('.mobile_menu_nav');
+const close_menu = document.getElementById('close_menu');
+const nav_elements = document.querySelectorAll('.nav_el');
 
-// Function to show next slide
-function showNextSlide() {
-    carouselItems[currentIndex].style.transform = 'translateX(-100%)';
-    currentIndex = (currentIndex + 1) % carouselItems.length;
-    carouselItems[currentIndex].style.transform = 'translateX(0)';
-    console.log(currentIndex);
-}
+mobile_menu_btn.addEventListener('click', () => {
+    mobile_menu.classList.remove('hidden')
+    mobile_menu_nav.classList.remove('-left-full')
+    mobile_menu_nav.classList.add('left-0')
+})
 
-// Automatically switch slides (adjust timing as needed)
-setInterval(showNextSlide, 5000); // Change slide every 3 seconds
+close_menu.addEventListener('click', () => {
+    mobile_menu.classList.add('hidden')
+    mobile_menu_nav.classList.add('-left-full')
+    mobile_menu_nav.classList.remove('left-0')
+})
+
+nav_elements.forEach(el => {
+    el.addEventListener('click', () => {
+        mobile_menu.classList.add('hidden')
+        mobile_menu_nav.classList.add('-left-full')
+        mobile_menu_nav.classList.remove('left-0')
+    })
+})
